@@ -88,5 +88,30 @@ public class Main {
                 int x = hashMap.get(letterOne);
                 int y = hashMap.get(letterTwo);
                 System.out.println("Letters "+ alphabet[x] + alphabet[y] + " Appear together " +  resultsTable[x][y] + " times");
+
+              /*    Any distributive function's a goal, ammirite???
+                 GOALS:
+                    calculate probability that four letters appear next to each other - if above certain p, then tokenize them
+                    after they've been tokenized, replace all instances of that combination with compressed version of the string
+
+                    then go through and do the same for three letter collisions. the threshold should be slightly higher than p1 in the
+                    first function. again, replace all instances with the compressed version of the string
+
+                    then do the same thing for two letter combinations, with an even higher p value threshold. Replace all instances.
+
+                    Save the dictionary (hash map) to a separate file in a readable format for the decompressor.
+
+                    Calculate the file size delta. calculate the compression ratio as a function of the size of the file.
+
+                    Write a decompressor using the saved dictionary
+
+                    EXTRAS
+
+                    Generate graphs to show the distributions of collisions in the set.
+                    Prove the tokens generated are the most efficient tokens for the set based using binomial distribution.
+
+                    integrate the function into the ORPTLIS protocol
+                 */
+
     }
 }
